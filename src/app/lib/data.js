@@ -56,3 +56,32 @@ export const contacts = [
     icon: '/img/phone.svg',
   },
 ]
+
+export const misi = [
+  'Memberikan solusi terbaik untuk mengatasi masalah klien.',
+  'Memberikan layanan pemasaran digital yang unggul dan efisien dalam meningkatkan kinerja target yang dituju.',
+  'Mengembangkan produk dan layanan dengan kreasi dan inovatif yang dapat berguna untuk masyarakat.'
+]
+
+export const teams = [
+  {
+    name: 'HyacintHa Laras',
+    position: 'Head of Digital marketing',
+    image: '/img/laras.png',
+  },
+  {
+    name: 'Fatihah Bening P',
+    position: 'Marketing Communication',
+    image: '/img/bening.png',
+  },
+  {
+    name: 'Xena Raihan',
+    position: 'Marketing Komunikasi',
+    image: '/img/bening.png',
+  },
+  {
+    name: 'Timur Akbar',
+    position: 'Illustrator',
+    image: '/img/laras.png',
+  },
+]

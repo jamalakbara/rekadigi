@@ -8,7 +8,7 @@ import Button from "../Button/button"
 
 const Footer = () => {
   return (
-    <footer className="bg-figma-blue bg-[url(/img/bg-footer.svg)] px-36 py-8 flex flex-col gap-6">
+    <footer className="bg-figma-blue bg-[url(/img/bg-footer.svg)] px-36 py-8 flex flex-col gap-6 relative z-10">
       <div className="flex justify-between items-center">
         <Logo />
 

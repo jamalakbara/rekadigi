@@ -13,7 +13,8 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'figma-blue': '#2D2D85'
+        'figma-blue': '#2D2D85',
+        'figma-broken-white': '#F1F2F6',
       }
     },
   },

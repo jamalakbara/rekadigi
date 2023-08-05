@@ -6,7 +6,7 @@ import Logo from "../Logo/logo"
 
 const Navigation = () => {
   return (
-    <nav className="w-full px-36 py-8  fixed bg-white grid grid-cols-3 shadow-md">
+    <nav className="w-full px-36 py-8 z-50 fixed bg-white grid grid-cols-3 shadow-md">
       <Link href="/">
         <Logo />
       </Link>
