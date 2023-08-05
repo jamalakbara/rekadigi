@@ -77,11 +77,21 @@ export const teams = [
   {
     name: 'Xena Raihan',
     position: 'Marketing Komunikasi',
-    image: '/img/bening.png',
+    image: '/img/xena.png',
   },
   {
     name: 'Timur Akbar',
     position: 'Illustrator',
-    image: '/img/laras.png',
+    image: '/img/timur.png',
+  },
+  {
+    name: 'Radias Mahes G',
+    position: 'Graphic Designer',
+    image: '/img/radias.png',
+  },
+  {
+    name: 'Habib Rahmatullah R',
+    position: 'Photographer & Videographer',
+    image: '/img/habib.png',
   },
 ]
