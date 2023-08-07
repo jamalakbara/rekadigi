@@ -1,4 +1,4 @@
-import { misi, services, works, members } from './lib/data'
+import { misi, services, works, members, faqs } from './lib/data'
 import Paragraph from './components/Paragraph/paragraph'
 import Heading from './components/Heading/heading'
 import Image from 'next/image'
@@ -237,21 +237,70 @@ export default function Home() {
 
       {/* Our Teams */}
       <section className='relative py-20 px-36 bg-white'>
-        {/* create 3 columns of grid image */}
-        <div className='grid grid-cols-3'>
-          {/* if members */}
-          {members && members.map((item, index) => (
-            // make image black and white and when hover it will be colored
-            <div key={index} className='relative w-full h-[400px]'>
+        <div className='flex flex-col gap-16'>
+          <Heading className='text-black text-5xl font-bold text-center'>
+            Perkenalkan Tim Kami
+          </Heading>
+
+          {/* create 3 columns of grid image */}
+          <div className='grid grid-cols-3'>
+            {/* if members */}
+            {members && members.map((item, index) => (
+              // make image black and white and when hover it will be colored. when image still loading, it will show blur image
+              <div key={index} className='relative w-full h-[400px]'>
+                <Image
+                  src={item.img}
+                  fill
+                  sizes='100%'
+                  priority
+                  className='w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500'
+                  blurDataURL={item.blur}
+                  placeholder='blur'
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className='relative py-20 px-36 bg-white bg-[url(/img/kotak-kiri.svg)] bg-left bg-no-repeat'>
+        <div className='flex gap-12 flex-wrap'>
+          <div className='flex-1 flex flex-col gap-12'>
+            <figure className='relative w-36 h-36'>
               <Image
-                src={item.img}
-                alt={`member-${index}`}
+                src='/img/faq.svg'
+                alt='faq'
                 fill
                 sizes='100%'
-                className='w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500'
               />
+            </figure>
+
+            <div className='flex flex-col gap-6'>
+              <Heading className='text-black text-5xl font-bold'>
+              Frequently Asked Questions
+              </Heading>
+
+              <Paragraph className='text-gray-500 text-xl'>
+              Masih membutuhkan bantuan ? Hubungi Kami
+              </Paragraph>
             </div>
-          ))}
+          </div>
+
+          <div className='flex-1 flex flex-col gap-6'>
+            {/* if faqs */}
+            {faqs && faqs.map((item, index) => (
+              <div key={index} className='flex flex-col gap-6 bg-figma-gray p-8 rounded-3xl'>
+                <Heading className='text-black text-2xl font-bold'>
+                  {item.question}
+                </Heading>
+
+                <Paragraph className='text-gray-500 text-xl'>
+                  {item.answer}
+                </Paragraph>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

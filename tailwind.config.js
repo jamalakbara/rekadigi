@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         'figma-blue': '#2D2D85',
         'figma-broken-white': '#F1F2F6',
+        'figma-gray': '#FAFAFA',
       }
     },
   },
