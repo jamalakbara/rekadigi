@@ -10,6 +10,11 @@ const Portfolios = () => {
   const [sliderRef] = useKeenSlider(
     {
       loop: true,
+      breakpoints: {
+        "(min-width: 1px)": {
+          slides: { perView: 3, spacing: 48,  },
+        },
+      },
       renderMode: "performance",
       slides: {
         perView: 'auto',

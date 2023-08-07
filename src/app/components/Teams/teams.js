@@ -9,6 +9,14 @@ const Teams = () => {
   const [sliderRef] = useKeenSlider(
     {
       loop: true,
+      breakpoints: {
+        "(min-width: 1px)": {
+          slides: { perView: 1, spacing: 5 },
+        },
+        "(min-width: 768px)": {
+          slides: { perView: 2, spacing: 10 },
+        },
+      },
       slides: {
         perView: 2,
       },
@@ -50,8 +58,16 @@ const Teams = () => {
       {/* if teams */}
       {teams && teams.map((item, index) => (
         <div key={index} className={`keen-slider__slide number-slide${index}`}>
-          <div className="flex flex-col gap-9 items-center">
-            <figure className="relative w-96 h-96">
+          <div className="
+            flex flex-col gap-9 items-center
+            sm:gap-3
+          "
+          >
+            <figure className="
+              relative w-96 h-96
+              sm:w-24 sm:h-24
+            "
+            >
               <Image 
                 src={item.image}
                 alt={item.name}
@@ -60,12 +76,23 @@ const Teams = () => {
               />
             </figure>
 
-            <div className="flex flex-col gap-2 items-center">
-              <Paragraph className="text-2xl text-black font-bold">
+            <div className="
+              flex flex-col gap-2 items-center
+            "
+            >
+              <Paragraph className="
+                text-2xl text-black font-bold
+                sm:text-xl
+              "
+              >
                 {item.name}
               </Paragraph>
 
-              <Paragraph className="text-xl text-gray-500">
+              <Paragraph className="
+                text-xl text-gray-500
+                sm:text-lg
+              "
+              >
                 {item.position}
               </Paragraph>
             </div>
