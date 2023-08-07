@@ -1,4 +1,4 @@
-import { misi, services, works } from './lib/data'
+import { misi, services, works, members } from './lib/data'
 import Paragraph from './components/Paragraph/paragraph'
 import Heading from './components/Heading/heading'
 import Image from 'next/image'
@@ -202,6 +202,56 @@ export default function Home() {
               />
             </figure>
           </div>
+        </div>
+      </section>
+
+      {/* Start Project */}
+      <section className='relative py-20 px-36 bg-figma-broken-white'>
+        <div className='flex justify-between items-center'>
+          <div className='flex-1 flex items-center justify-center'>
+            <figure className='relative w-[408px] h-[369px]'>
+              <Image
+                src='/img/start-project.svg'
+                fill
+                sizes='100%'
+                priority
+              />
+            </figure>
+          </div>
+
+          <div className='flex-1'>
+              <Heading className='text-black text-5xl font-bold'>
+              Mulai Projekmu
+              </Heading>
+
+              <Paragraph className='text-gray-500 text-xl my-6'>
+              Jelajahi beragam produk dan layanan yang lengkap, ungkapkan potensimu, dan mulailah petualangan baru.
+              </Paragraph>
+              
+              <Button className='bg-figma-blue'>
+              Mulai Projek
+              </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Teams */}
+      <section className='relative py-20 px-36 bg-white'>
+        {/* create 3 columns of grid image */}
+        <div className='grid grid-cols-3'>
+          {/* if members */}
+          {members && members.map((item, index) => (
+            // make image black and white and when hover it will be colored
+            <div key={index} className='relative w-full h-[400px]'>
+              <Image
+                src={item.img}
+                alt={`member-${index}`}
+                fill
+                sizes='100%'
+                className='w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500'
+              />
+            </div>
+          ))}
         </div>
       </section>
     </>

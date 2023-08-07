@@ -168,3 +168,24 @@ export const works = [
   'Setelah menyelesaikan uji kelayakan, rancangan desain akhir disiapkan dengan menggunakan smart tools. Kemudian, tim pengembangan kami mulai mengembangkan solusi yang sesuai dengan desain. Dalam tahap pengujian, kami menguji setiap komponen untuk memastikan bahwa solusi kami sesuai dengan kebutuhan.',
   'Kami memberikan beberapa pelayanan gratis untuk membantu klien mengelola dan mengontrol solusi, seperti konsultasi gratis dan memberikan gratis akses System Management Controlling selama proses pembuatan.',
 ]
+
+export const members = [
+  {
+    img: '/img/tim-1.jpg',
+  },
+  {
+    img: '/img/tim-2.jpg',
+  },
+  {
+    img: '/img/tim-3.jpg',
+  },
+  {
+    img: '/img/tim-4.jpg',
+  },
+  {
+    img: '/img/tim-5.jpg',
+  },
+  {
+    img: '/img/tim-6.jpg',
+  },
+]
