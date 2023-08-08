@@ -14,12 +14,11 @@ const Portfolios = () => {
         "(min-width: 1px)": {
           slides: { perView: 3, spacing: 48,  },
         },
+        "(min-width: 768px)": {
+          slides: { perView: 'auto', spacing: 48,  },
+        },
       },
       renderMode: "performance",
-      slides: {
-        perView: 'auto',
-        spacing: 48,
-      },
       created(s) {
         s.moveToIdx(5, true, animation)
       },

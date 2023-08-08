@@ -8,6 +8,7 @@ const Card = ({icon, head, desc, className}) => {
     <div className={`
       flex flex-col gap-6 p-12 max-w-[425px] rounded-[32px] shadow-md 
       sm:p-6 sm:max-w-full sm:rounded-[24px] sm:gap-4 sm:items-center
+      md:p-8 md:gap-8 md:max-w-[500px]
       ${className}
     `}
     >

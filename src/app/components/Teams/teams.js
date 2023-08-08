@@ -61,11 +61,13 @@ const Teams = () => {
           <div className="
             flex flex-col gap-9 items-center
             sm:gap-3
+            md:gap-6
           "
           >
             <figure className="
               relative w-96 h-96
               sm:w-24 sm:h-24
+              md:w-36 md:h-36
             "
             >
               <Image 

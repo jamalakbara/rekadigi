@@ -15,6 +15,7 @@ export default function Home() {
       <section className="
         relative h-screen bg-white bg-center bg-[url(/img/bg-hero.png)] flex items-center px-36 py-20
         sm:p-10 sm:bg-contain sm:bg-no-repeat sm:bg-center sm:h-[600px]
+        md:h-[700px]
       "
       >
         <Heading className="
@@ -49,6 +50,7 @@ export default function Home() {
         <div className="
           flex flex-col gap-12 relative z-10
           sm:gap-4 sm:items-center sm:text-center
+          md:gap-12
         "
         >
           <Paragraph className='
@@ -70,6 +72,7 @@ export default function Home() {
           <div className='
             flex gap-12
             sm:flex-col sm:gap-4 sm:items-center sm:text-center sm:mt-8
+            md:mt-0
           '
           >
             <div className='
@@ -134,11 +137,13 @@ export default function Home() {
       <section className='
         relative py-20 min-h-screen bg-white bg-[url(/img/kotak-kanan.svg)] bg-no-repeat bg-right-bottom bg-contain
         sm:p-10 sm:min-h-[600px] sm:bg-right-top sm:bg-50%
+        md:min-h-min
       '
       >
         <figure className='
           w-[1024px] h-[1024px] absolute bottom-[-15%] left-[-20%] z-[1]
           sm:w-80 sm:h-80 sm:bottom-[-10%] sm:left-[-10%]
+          md:w-96 md:h-96
         '
         >
           <Image
@@ -152,11 +157,13 @@ export default function Home() {
         <div className='
           flex flex-col gap-24 relative z-10
           sm:gap-8 sm:items-center sm:text-center
+          md:gap-12
         '
         >
           <div className='
             flex flex-col gap-6 px-36
-            sm:gap-4 sm:px-0 sm:max-w-[80%] sm:mx-auto sm:text-center
+            sm:gap-4 sm:px-0 sm:text-center
+            md:gap-8
           '
           >
             <Heading className='
@@ -189,11 +196,13 @@ export default function Home() {
         <div className='
           relative flex flex-col gap-24 z-10
           sm:gap-8 sm:items-center sm:text-center
+          md:gap-12
         '
         >
           <div className='
             flex flex-col gap-6
             sm:gap-4 sm:mx-auto sm:text-center
+            md:gap-8
           '
           >
             <Heading className='
@@ -241,6 +250,7 @@ export default function Home() {
         <div className='
           flex flex-col gap-16
           sm:gap-8 sm:items-center sm:text-center
+          md:gap-12
         '
         >
           <Heading className='
