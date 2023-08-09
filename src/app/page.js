@@ -13,14 +13,16 @@ export default function Home() {
       {/* Hero */}
 
       <section className="
-        relative h-screen bg-white bg-center bg-[url(/img/bg-hero.png)] flex items-center px-36 py-20
+        relative bg-white bg-center bg-[url(/img/bg-hero.png)] flex items-center
         sm:p-10 sm:bg-contain sm:bg-no-repeat sm:bg-center sm:h-[600px]
         md:h-[700px]
+        lg:h-screen lg:px-36 lg:py-20 lg:bg-auto
       "
       >
         <Heading className="
-          text-black text-8xl font-bold max-w-[50%]
+          text-black font-bold
           sm:text-5xl sm:max-w-full sm:text-center
+          lg:text-7xl lg:max-w-[50%] lg:text-left
         "
         >
           Pengalaman Digital Lebih Baik Dengan <b className='text-figma-blue'>Rekadigi</b>
@@ -30,12 +32,15 @@ export default function Home() {
       {/* Visi Misi */}
       <section className="
         relative flex flex-col px-36 py-20 bg-figma-broken-white gap-12 bg-[url(/img/bulet-kanan.svg)] bg-right-top bg-no-repeat
-        sm:p-10 sm:h-auto sm:bg-50%
+        sm:p-10 sm:h-auto sm:bg-50% sm:gap-4
+        lg:px-36 lg:py-20 lg:bg-auto lg:gap-12
       "
       >
         <figure className="
-          w-80 h-80 absolute bottom-[-15%] left-0 z-[1]
+          absolute z-[1]
           sm:w-40 sm:h-40 sm:bottom-[-10%] sm:left-[-10%]
+          md:w-52 md:h-w-52 md:bottom-[-20%] md:left-[-20%] 
+          lg:left-0 lg:bottom-[-15%] lg:w-80 lg:h-80
         "
         >
           <Image
@@ -51,19 +56,22 @@ export default function Home() {
           flex flex-col gap-12 relative z-10
           sm:gap-4 sm:items-center sm:text-center
           md:gap-12
+          lg:text-left lg:items-start
         "
         >
           <Paragraph className='
             text-gray-500
             sm:text-xl
+            lg:text-2xl
           '
           >
             Rekadigi.id adalah perusahaan jasa di bidang Digital Marketing
           </Paragraph>
 
           <Heading className='
-            text-black text-7xl font-bold
+            text-black font-bold
             sm:text-4xl
+            lg:text-7xl
           '
           >
           Mengutamakan <b className='text-figma-blue'>kepuasan</b> klien dan memandang pengembangan bisnis sebagai sarana kerjasama sosial
@@ -73,16 +81,19 @@ export default function Home() {
             flex gap-12
             sm:flex-col sm:gap-4 sm:items-center sm:text-center sm:mt-8
             md:mt-0
+            lg:gap-12 lg:flex-row lg:items-start lg:text-left
           '
           >
             <div className='
               flex-1 flex flex-col gap-4
-              sm:flex-1 sm:flex sm:flex-col sm:gap-4 sm:items-center sm:text-center
+              sm:items-center sm:text-center
+              lg:items-start lg:text-left
             '
             >
               <Heading className='
-                text-black text-[32px]
+                text-black
                 sm:text-2xl
+                lg:text-4xl
               '
               >
                 Visi
@@ -91,6 +102,7 @@ export default function Home() {
               <Paragraph className='
                 text-xl text-gray-500
                 sm:text-lg
+                lg:text-xl
               '
               >
                 Penyedia layanan Digital Marketing yang inovatif dan berkualitas tinggi
@@ -99,28 +111,32 @@ export default function Home() {
 
             <div className='
               flex-1 flex flex-col gap-4
-              sm:flex-1 sm:flex sm:flex-col sm:gap-4 sm:items-center sm:text-center
+              sm:items-center sm:text-center
+              lg:items-start lg:text-left
             '
             >
               <Heading className='
-                text-black text-[32px]
+                text-black
                 sm:text-2xl
+                lg:text-4xl
               '
               >
                 Misi
               </Heading>
 
               <ul className='
-                text-gray-500 flex flex-col gap-4 list-disc
+                text-gray-500 flex flex-col
                 sm:text-lg sm:gap-2 sm:items-center sm:text-center sm:list-none
+                lg:text-2xl lg:gap-4 lg:items-start lg:text-left lg:list-disc
               '
               >
                 {/* if misi */}
                 {misi && misi.map((item, index) => (
                   <li key={index}>
                     <Paragraph className='
-                      text-xl text-gray-500
+                      text-gray-500
                       sm:text-lg
+                      lg:text-xl
                     '
                     >
                       {item}
@@ -138,16 +154,19 @@ export default function Home() {
         relative py-20 min-h-screen bg-white bg-[url(/img/kotak-kanan.svg)] bg-no-repeat bg-right-bottom bg-contain
         sm:p-10 sm:min-h-[600px] sm:bg-right-top sm:bg-50%
         md:min-h-min
+        lg:py-20 lg:min-h-screen lg:bg-auto
       '
       >
         <figure className='
-          w-[1024px] h-[1024px] absolute bottom-[-15%] left-[-20%] z-[1]
+          absolute z-[1]
           sm:w-80 sm:h-80 sm:bottom-[-10%] sm:left-[-10%]
           md:w-96 md:h-96
+          lg:w-[1024px] lg:h-[1024px] lg:bottom-[-15%] lg:left-[-20%]
         '
         >
           <Image
             src='/img/kotak-kiri.svg'
+            alt='Kotak Kiri'
             fill
             sizes='100%'
             priority
@@ -161,14 +180,16 @@ export default function Home() {
         '
         >
           <div className='
-            flex flex-col gap-6 px-36
+            flex flex-col
             sm:gap-4 sm:px-0 sm:text-center
             md:gap-8
+            lg:gap-12 lg:px-36 lg:text-left
           '
           >
             <Heading className='
-              text-black text-5xl font-bold
+              text-black font-bold
               sm:text-4xl
+              lg:text-5xl
             '
             >
               Tim Kami 
@@ -177,6 +198,7 @@ export default function Home() {
             <Paragraph className='
               text-gray-500 text-xl
               sm:text-lg
+              lg:text-xl
             '
             >
               Perusahaan kami mengedepankan budaya kerja yang menjunjung tinggi kebebasan dalam berkreasi, saling toleransi dalam keragaman, keterbukaan berpendapat sehingga tercipta lingkungan kerja yang menyenangkan, fleksibel tetapi tujuan tetap tercapai.

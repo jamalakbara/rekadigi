@@ -59,15 +59,17 @@ const Teams = () => {
       {teams && teams.map((item, index) => (
         <div key={index} className={`keen-slider__slide number-slide${index}`}>
           <div className="
-            flex flex-col gap-9 items-center
+            flex flex-col items-center
             sm:gap-3
             md:gap-6
+            lg:gap-9
           "
           >
             <figure className="
-              relative w-96 h-96
+              relative
               sm:w-24 sm:h-24
               md:w-36 md:h-36
+              lg:w-96 lg:h-96
             "
             >
               <Image 
@@ -83,16 +85,18 @@ const Teams = () => {
             "
             >
               <Paragraph className="
-                text-2xl text-black font-bold
+                text-black font-bold
                 sm:text-xl
+                lg:text-2xl
               "
               >
                 {item.name}
               </Paragraph>
 
               <Paragraph className="
-                text-xl text-gray-500
+                text-gray-500
                 sm:text-lg
+                lg:text-xl
               "
               >
                 {item.position}
