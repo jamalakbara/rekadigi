@@ -9,12 +9,14 @@ const Card = ({icon, head, desc, className}) => {
       flex flex-col gap-6 p-12 max-w-[425px] rounded-[32px] shadow-md 
       sm:p-6 sm:max-w-full sm:rounded-[24px] sm:gap-4 sm:items-center
       md:p-8 md:gap-8 md:max-w-[500px]
+      lg:p-12 lg:gap-6 lg:max-w-[600px] lg:text-left lg:items-start
       ${className}
     `}
     >
       <figure className="
-        relative w-14 h-14
+        relative
         sm:w-12 sm:h-12
+        md:w-14 md:h-14
       "
       >
         <Image
@@ -28,14 +30,16 @@ const Card = ({icon, head, desc, className}) => {
       <Heading className="
         text-black text-2xl font-bold
         sm:text-xl
+        lg:text-2xl
       "
       >
         {head}
       </Heading>
 
       <Paragraph className="
-        text-gray-500 text-xl
+        text-gray-500
         sm:text-lg
+        lg:text-xl
       "
       >
         {desc}

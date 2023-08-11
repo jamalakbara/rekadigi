@@ -37,14 +37,6 @@ const Portfolios = () => {
       {portfolios && portfolios.map((item, index) => (
         <div key={index} className={`keen-slider__slide number-slide${index} flex items-center justify-center`}>
           <img src={item.img} alt={item.title} />
-          {/* <figure className="relative w-24 h-24">
-            <Image
-              src={item.img}
-              alt={item.title}
-              fill
-              sizes="100%"
-            />
-          </figure> */}
         </div>
       ))}
     </div>

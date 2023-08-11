@@ -211,25 +211,29 @@ export default function Home() {
 
       {/* Services */}
       <section className='
-        relative py-20 px-36 min-h-screen bg-figma-broken-white bg-[url(/img/bg-service.svg)] bg-contain bg-no-repeat bg-center
+        relative bg-figma-broken-white bg-[url(/img/bg-service.svg)] bg-contain bg-no-repeat bg-center
         sm:p-10 sm:min-h-[600px] sm:bg-no-repeat sm:bg-50%
+        lg-min-h-screen lg:bg-contain lg:py-20 lg:px-36
       '
       >
         <div className='
           relative flex flex-col gap-24 z-10
           sm:gap-8 sm:items-center sm:text-center
           md:gap-12
+          lg:items-start lg:text-left
         '
         >
           <div className='
             flex flex-col gap-6
             sm:gap-4 sm:mx-auto sm:text-center
             md:gap-8
+            lg:gap-12 lg:text-left lg:mx-0
           '
           >
             <Heading className='
               text-black text-5xl font-bold
               sm:text-4xl
+              lg:text-5xl
             '
             >
               Layanan Kami
@@ -238,6 +242,7 @@ export default function Home() {
             <Paragraph className='
               text-gray-500 text-xl
               sm:text-lg
+              lg:text-xl
             '
             >
               Kami hadir untuk menjadi mitra bisnis anda dengan menawarkan solusi kreatif dan inovatif dalam pengembangan IT dan pemasaran digital.
@@ -247,6 +252,7 @@ export default function Home() {
           <div className='
             flex flex-wrap justify-center items-stretch gap-8
             sm:gap-4 sm:mx-auto sm:text-center
+            lg:gap-10 lg:mx-0 lg:text-left
           '
           >
             {/* if services */}
@@ -265,19 +271,22 @@ export default function Home() {
 
       {/* Portfolio */}
       <section className='
-        relative py-20 bg-white
+        relative bg-white
         sm:py-10
+        lg:py-20
       '
       >
         <div className='
           flex flex-col gap-16
           sm:gap-8 sm:items-center sm:text-center
           md:gap-12
+          lg:gap-16
         '
         >
           <Heading className='
             text-black text-5xl font-bold px-36 text-center
             sm:text-4xl sm:px-10
+            lg:text-5xl lg:px-0
           '
           >
             Sudah dipercayai oleh
@@ -291,21 +300,25 @@ export default function Home() {
       <section className='
         relative py-20 px-36 min-h-screen bg-[url(/img/bg-work.svg)] bg-center bg-no-repeat bg-cover flex items-center
         sm:p-10 sm:min-h-[600px] sm:bg-no-repeat
+        lg:min-h-screen lg:bg-cover lg:py-20 lg:px-36
       '
       >
         <div className='
           flex gap-10
           sm:flex-col-reverse sm:gap-8 sm:items-center sm:text-center
+          lg:flex-row lg:gap-16 lg:items-start lg:text-left
         '
         >
           <div className='
             flex-1 flex flex-col gap-10
             sm:gap-4 sm:mx-auto sm:text-center
+            lg:gap-10 lg:mx-0 lg:text-left
           '
           >
             <Heading className='
               text-black text-5xl font-bold
               sm:text-4xl
+              lg:text-5xl
             '
             >
               Bagaimana Kami Bekerja
@@ -314,6 +327,7 @@ export default function Home() {
               <ol className='
                 flex flex-col gap-10
                 sm:gap-4
+                lg:gap-10
               '
               >
                 {/* if works */}
@@ -323,9 +337,14 @@ export default function Home() {
                       <div className='
                         flex-none flex items-center justify-center bg-figma-blue w-14 h-14 rounded-full
                         sm:hidden
+                        lg:flex
                       '
                       >
-                        <Heading className='text-white text-2xl'>
+                        <Heading className='
+                          text-white text-2xl
+                          lg:text-3xl
+                        '
+                        >
                           {index + 1}
                         </Heading>
                       </div>
@@ -333,6 +352,7 @@ export default function Home() {
                       <Paragraph className='
                         text-gray-500 text-xl flex-initial
                         sm:text-lg
+                        lg:text-xl
                       '
                       >
                         {item}
@@ -347,6 +367,7 @@ export default function Home() {
             <figure className='
               relative w-[675px] h-[505px]
               sm:w-[250px] sm:h-[187px]
+              lg:w-[675px] lg:h-[505px]
             '
             >
               <Image
@@ -363,19 +384,22 @@ export default function Home() {
 
       {/* Career */}
       <section className='
-        relative py-20 px-36 bg-white
+        relative bg-white
         sm:p-10
+        lg:py-20 lg:px-36
       '
       >
         <div className='
-          flex justify-between items-center
+          flex justify-between
           sm:flex-col-reverse sm:gap-8 sm:items-center sm:text-center
+          lg:flex-row lg:gap-16 lg:text-left
         '
         >
           <div className='flex-1'>
               <Heading className='
                 text-black text-5xl font-bold
                 sm:text-4xl
+                lg:text-5xl
               '
               >
                 Karir
@@ -384,6 +408,7 @@ export default function Home() {
               <Paragraph className='
                 text-gray-500 text-xl my-6
                 sm:text-lg
+                lg:text-xl
               '
               >
                 Open position <b>Developer, Designer, and Internship </b>
@@ -396,8 +421,9 @@ export default function Home() {
 
           <div className='flex-1 flex items-center justify-center'>
             <figure className='
-              relative w-[408px] h-[369px]
+              relative 
               sm:w-[250px] sm:h-[187px]
+              lg:w-[408px] lg:h-[369px]
             '
             >
               <Image
@@ -413,19 +439,22 @@ export default function Home() {
 
       {/* Start Project */}
       <section className='
-        relative py-20 px-36 bg-figma-broken-white
+        relative bg-figma-broken-white
         sm:p-10
+        lg:py-20 lg:px-36
       '
       >
         <div className='
           flex justify-between items-center
           sm:flex-col sm:gap-8 sm:items-center sm:text-center
+          lg:flex-row lg:gap-16 lg:text-left
         '
         >
           <div className='flex-1 flex items-center justify-center'>
             <figure className='
-              relative w-[408px] h-[369px]
+              relative
               sm:w-[250px] sm:h-[187px]
+              lg:w-[408px] lg:h-[369px]
             '
             >
               <Image
@@ -441,6 +470,7 @@ export default function Home() {
               <Heading className='
                 text-black text-5xl font-bold
                 sm:text-4xl
+                lg:text-5xl
               '
               >
                 Mulai Projekmu
@@ -449,6 +479,7 @@ export default function Home() {
               <Paragraph className='
                 text-gray-500 text-xl my-6
                 sm:text-lg
+                lg:text-xl 
               '
               >
                 Jelajahi beragam produk dan layanan yang lengkap, ungkapkan potensimu, dan mulailah petualangan baru.
@@ -465,6 +496,7 @@ export default function Home() {
       <section className='
         relative py-20 px-36 bg-white
         sm:p-10
+        lg:py-20 lg:px-36
       '
       >
         <div className='
@@ -474,6 +506,7 @@ export default function Home() {
           <Heading className='
             text-black text-5xl font-bold text-center
             sm:text-4xl
+            lg:text-5xl
           '
           >
             Perkenalkan Tim Kami
@@ -483,6 +516,7 @@ export default function Home() {
           <div className='
             grid grid-cols-3
             sm:grid-cols-1 sm:gap-8
+            lg:grid-cols-3 lg:gap-0
           '
           >
             {/* if members */}
@@ -491,6 +525,7 @@ export default function Home() {
               <div key={index} className='
                 relative w-full h-[400px]
                 sm:w-full sm:h-[200px]
+                lg:w-full lg:h-[400px]
               '
               >
                 <Image
@@ -513,6 +548,7 @@ export default function Home() {
       <section className='
         relative py-20 px-36 bg-white bg-[url(/img/kotak-kiri.svg)] bg-left bg-no-repeat
         sm:p-10
+        lg:py-20 lg:px-36
       '
       >
         <div className='
@@ -522,11 +558,13 @@ export default function Home() {
           <div className='
             flex-1 flex flex-col gap-12
             sm:gap-6
+            lg:gap-12
           '
           >
             <figure className='
-              relative w-36 h-36
+              relative
               sm:w-16 sm:h-16
+              lg:w-36 lg:h-36
             '
             >
               <Image
@@ -542,16 +580,18 @@ export default function Home() {
             '
             >
               <Heading className='
-                text-black text-5xl font-bold
+                text-black font-bold
                 sm:text-4xl
+                lg:text-5xl
               '
               >
               Frequently Asked Questions
               </Heading>
 
               <Paragraph className='
-                text-gray-500 text-xl
+                text-gray-500
                 sm:text-lg
+                lg:text-xl
               '
               >
               Masih membutuhkan bantuan ? Hubungi Kami
@@ -562,6 +602,7 @@ export default function Home() {
           <div className='
             flex-1 flex flex-col gap-6
             sm:gap-4
+            lg:gap-6
           '
           >
             {/* if faqs */}
@@ -569,11 +610,13 @@ export default function Home() {
               <div key={index} className='
                 flex flex-col gap-6 bg-figma-gray p-8 rounded-3xl
                 sm:p-4
+                lg:p-8
               '
               >
                 <Heading className='
                   text-black text-2xl font-bold
                   sm:text-xl
+                  lg:text-2xl
                 '
                 >
                   {item.question}
@@ -582,6 +625,7 @@ export default function Home() {
                 <Paragraph className='
                   text-gray-500 text-xl
                   sm:text-lg
+                  lg:text-xl
                 '>
                   {item.answer}
                 </Paragraph>
