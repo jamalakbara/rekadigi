@@ -3,13 +3,15 @@ import Image from "next/image"
 const Contact = ({icon, href, children}) => {
   return (
     <div className="
-      text-white flex gap-2 items-center
+      text-white flex items-center
       sm:gap-1 sm:text-sm
+      lg:gap-2 lg:text-base
     "
     >
       <figure className="
-        w-6 h-6 relative
+        relative
         sm:w-4 sm:h-4
+        lg:w-6 lg:h-6
       "
       >
         <Image

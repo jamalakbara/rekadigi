@@ -9,20 +9,23 @@ import Button from "../Button/button"
 const Footer = () => {
   return (
     <footer className="
-      bg-figma-blue bg-[url(/img/bg-footer.svg)] px-36 py-8 flex flex-col gap-6 relative z-10
+      bg-figma-blue bg-[url(/img/bg-footer.svg)] flex flex-col relative z-10 bg-cover bg-no-repeat bg-bottom
       sm:p-10 sm:gap-4 sm:z-0
+      lg:px-36 lg:py-20 lg:gap-12
     "
     >
       <div className="
         flex justify-between items-center
         sm:flex-col sm:gap-4
+        lg:flex-row
       "
       >
         <Logo />
 
         <span className="
-          text-white text-base leading-5
+          text-white
           sm:text-sm sm:leading-4
+          lg:text-base lg:leading-5
         "
         >
           © 2023 Daya Rekadigital Indonesia
@@ -32,21 +35,25 @@ const Footer = () => {
       <div className="
         flex gap-12
         sm:flex-col sm:gap-4
+        lg:flex-row lg:gap-12
       "
       >
         <div className="
-          flex-1 flex flex-col gap-16
+          flex-1 flex flex-col
           sm:gap-4
+          lg:gap-16
         "
         >
           <div className="
             flex flex-col gap-4
             sm:gap-2 sm:items-center
+            lg:gap-4 lg:items-start
           "
           >
             <Heading className="
-              text-white text-[32px]
+              text-white
               sm:text-xl
+              lg:text-[32px]
             "
             >
               Temukan Kami   
@@ -55,6 +62,7 @@ const Footer = () => {
             <Paragraph className="
               text-white
               sm:text-sm sm:text-center
+              lg:text-base lg:text-left
             "
             >
               Jl. Wijaya Kusuma No.39, Tipes, Kec. Serengan, Kota Surakarta, Jawa Tengah 57154
@@ -66,11 +74,13 @@ const Footer = () => {
           <div className="
             flex flex-col gap-4
             sm:gap-2 sm:items-center
+            lg:gap-4 lg:items-start
           "
           >
             <Heading className="
-              text-white text-[32px]
+              text-white
               sm:text-xl
+              lg:text-[32px]
             "
             >
               Kontak Kami
@@ -93,6 +103,7 @@ const Footer = () => {
           <Heading className="
             text-white text-[32px]
             sm:text-xl sm:text-center
+            lg:text-[32px] lg:text-left
           "
           >
             Pesan
@@ -101,6 +112,7 @@ const Footer = () => {
           <textarea className="
             w-full h-40 bg-white rounded-md p-4 text-black
             sm:h-32 sm:p-2 sm:text-sm
+            lg:h-40 lg:p-4 lg:text-base
           " 
             placeholder="Pesan" 
           />
@@ -108,6 +120,7 @@ const Footer = () => {
           <Button className="
             text-white bg-figma-blue border-2 border-white
             sm:text-sm
+            lg:text-base
           "
           >
             Kirim

@@ -215,6 +215,7 @@ export default function Home() {
         sm:p-10 sm:min-h-[600px] sm:bg-no-repeat sm:bg-50%
         lg-min-h-screen lg:bg-contain lg:py-20 lg:px-36
       '
+      id='layanan'
       >
         <div className='
           relative flex flex-col gap-24 z-10
@@ -275,6 +276,7 @@ export default function Home() {
         sm:py-10
         lg:py-20
       '
+      id='portofolio'
       >
         <div className='
           flex flex-col gap-16
@@ -388,6 +390,7 @@ export default function Home() {
         sm:p-10
         lg:py-20 lg:px-36
       '
+      id='karir'
       >
         <div className='
           flex justify-between
@@ -498,6 +501,7 @@ export default function Home() {
         sm:p-10
         lg:py-20 lg:px-36
       '
+      id='galeri'
       >
         <div className='
           flex flex-col gap-16
@@ -550,6 +554,7 @@ export default function Home() {
         sm:p-10
         lg:py-20 lg:px-36
       '
+      id='faq'
       >
         <div className='
           flex gap-12 flex-wrap
